@@ -1,11 +1,11 @@
 // Nota: fibonacci con recursión: // O(2^n)
 
-let calculations=0;
+let calculations = 0;
+
 function fibonacciMaster() {
-    // O(n)
+    // O(n) para fibonacci con programación dinámica
     let cache = {};
-    return function fibonacci(n)
-    {
+    return function fibonacci(n) {
         calculations++;
         if (n in cache) {
             return cache[n];
